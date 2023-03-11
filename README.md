@@ -20,7 +20,7 @@ appディレクトリに移動して実行すること！
 ```
 $ docker container run \
 -d \
--rm \
+--rm \
 -p 8080:80 \
 -v "$(pwd)"/src:/var/www/html \
 --network php-mysql-network \
@@ -40,7 +40,7 @@ $ docker build -t php-db .
 ```
 $ docker container run \
 -d \
--rm \
+--rm \
 --network php-mysql-network \
 --name run-php-db php-db
 ```
